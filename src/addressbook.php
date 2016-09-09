@@ -5,7 +5,7 @@ class Contact
   private $number;
   private $address;
 
-  function __construct()
+  function __construct($full_name, $phone_number, $permanent_address)
   {
       $this->name = $full_name;
       $this->number = $phone_number;

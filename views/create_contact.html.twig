@@ -1,11 +1,17 @@
-
 <html>
   <head>
     <title>Contact Created!</title>
   </head>
   <body>
-    <h1>Success!</h1><br>
-    <h2>You Created a Contact.</h2>
-
+    <h1>Success!</h1>
+    <h2>You Created a Contact.</h2><hr>
+    <div class="container jumbotron">
+      <ul>
+        <h3>{{newcontact.getName}}</h3>
+        <li>{{newcontact.getNumber}}</li>
+        <li>{{newcontact.getAddress}}</li>
+      </ul>
+      <button><a href='/'>Go Back to Address Book</a></button>
+    </div>
   </body>
 </html>
