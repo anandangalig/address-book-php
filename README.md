@@ -16,7 +16,7 @@ _Users will be able to add new contacts, see all existing contacts made so far, 
 
 ## Known Bugs
 
-_No known bugs so far, but it could use some styling._
+_Empty input fields are allowed to proceed ahead and create an empty contact entry._
 
 ## Support and contact details
 
@@ -24,27 +24,18 @@ _Please contact me at anandangalig@gmail.com with any feedback_
 
 ## Specs:
 
-* _Behavior: If user tries to place an order without choosing a size, the program will display an error message._
-  * _Input: None, but "Place Your Order" button is pressed_
-  * _Output: Alert box appears : Please choose a size for your pizza and try again!; No total or pizza image displayed._
-* _Behavior: If user selects size Small, Medium, or Large and placed the order, the program will display the Order total as $5, $7, or $9 respectively and display the pizza image._
-  * _Input: Step 1 Choose a size: Medium_
-  * _Output: Your Order Total is: $7_
-* _Behavior: If user selects size Medium with Meat toppings only, the total will be increased by $3 per selection._
-  * _Input: Size: Medium; Toppings: Pepperoni_
-  * _Output: Your Order Total is: $10_
-* _Behavior: If user selects size Medium with Veggie toppings only, the total will be increased by $2 per selection._
-  * _Input: Size: Medium; Toppings: Mushrooms_
-  * _Output: Your Order Total is: $9_
-* _Behavior: If user selects size Medium with both Meat and Veggie toppings, the total will include $3 and $2 per selection respectively, plus $7 for the Medium size._
-  * _Input: Size: Medium; Toppings: Pepperoni, Mushrooms_
-  * _Output: Your Order Total is: $12_
-* _Behavior: If user selects size Large with both Meat and Veggie toppings, the total will include $3 and $2 per selection respectively, plus $9 for the Large size._
-  * _Input: Size: Large; Toppings: Pepperoni, Mushrooms_
-  * _Output: Your Order Total is: $14_
-* _Behavior: If user selects size Small with both Meat and Veggie toppings, the total will include $3 and $2 per selection respectively, plus $5 for the Small size._
-  * _Input: Size: Small; Toppings: Pepperoni, Mushrooms_
-  * _Output: Your Order Total is: $10_
+* _Behavior: The landing page displays an empty form for users to create new contacts._
+  * _Input: Fill in - Name: John Doe, Phone Number: 555-666-7777, Address: 123 Main St., Philadelphia, PA 19123 and click on blue "Create" button._
+  * _Output: New page displays "Success! You created a Contact" with the details of the entry._
+* _Behavior: After successful creation of a contact, the user clicks on on "Go Back to Address Book" button to return._
+  * _Input: Click on "Go Back to Address Book" button._
+  * _Output: The main Address Book page is displayed with all existing contacts, including the newly created one._
+* _Behavior: If user decides to delete all contacts and clear the Address Book, he/she/they clicks the red "Delete All Contacts" button._
+  * _Input: Click on "Delete All Contacts" button_
+  * _Output: Confirmation page displays message "Address Book Cleared!"_
+* _Behavior: After clearing the Address Book, user can go back to the clean main page and re-create new contacts._
+  * _Input: Click on "Go Back to Address Book" button_
+  * _Output: The main Address Book page is displayed with no Existing Contacts._
 
 ### License
 
