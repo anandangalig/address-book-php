@@ -10,9 +10,13 @@ _Users will be able to add new contacts, see all existing contacts made so far, 
 
 ## Setup/Installation Requirements
 
-* _Go to anandangalig.github.io/address-book to see the web page in your web-browser._
-* _Go to https://github.com/anandangalig/address-book.git and clone this repository onto your local machine._
+* _Go to https://github.com/anandangalig/address-book-php.git and clone this repository onto your local machine._
 * _To see the code, open the cloned repository in your favorite text editor._
+* _To see it in your browser:_
+  * _Open terminal and navigate to the top level of the cloned directory and run "composer install"_
+  * _Navigate to the web directory and run "php -S localhost:8000"_
+  * _Then, open your favorite web-browser and go to URL localhost:8000_
+
 
 ## Known Bugs
 
