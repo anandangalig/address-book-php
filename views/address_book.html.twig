@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="container jumbotron">
-      <h1>Address Book</h1><hr><br>
+      <h1>Address Book</h1><hr>
 
       {% if existing_contacts is not empty %}
         <h2>Existing Contacts:</h2>
@@ -18,16 +18,20 @@
         {% endfor %}
       {% endif %}
 
+      <form action='/delete_contacts'>
+        <button type='submit' class='btn btn-danger'>Delete All Contact</button>
+      </form>
+
       <h2>Create New Contact:</h2>
       <form action='/create_contact' method='post'>
         <label for='input_name'>Name:</label>
-        <input id='input_name' name='input_name' type='text'><br>
+        <input class='form-control' id='input_name' name='input_name' type='text' placeholder="First and Last"><br>
 
         <label for='input_number'>Phone Number:</label>
-        <input id='input_number' name='input_number' type='text'><br>
+        <input class='form-control' id='input_number' name='input_number' type='text' placeholder='555-555-5555' ><br>
 
         <label for='input_address'>Address:</label>
-        <input id='input_address' name='input_address' type='text'><br>
+        <input class='form-control' id='input_address' name='input_address' type='text' placeholder='UNJIIDAAAA!'><br>
 
         <button type='submit' class='btn btn-info'>Create</button>
       </form>

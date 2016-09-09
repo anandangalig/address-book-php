@@ -1,17 +1,20 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Contact Created!</title>
   </head>
   <body>
-    <h1>Success!</h1>
-    <h2>You Created a Contact.</h2><hr>
+    <div class="container">
+      <h1>Success!</h1>
+      <h2>You Created a Contact.</h2><hr>
+    </div>
     <div class="container jumbotron">
       <ul>
         <h3>{{newcontact.getName}}</h3>
         <li>{{newcontact.getNumber}}</li>
         <li>{{newcontact.getAddress}}</li>
       </ul>
-      <button><a href='/'>Go Back to Address Book</a></button>
+      <a href='/'><button class="btn btn-success">Go Back to Address Book</button></a>
     </div>
   </body>
 </html>

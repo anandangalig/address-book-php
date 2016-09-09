@@ -16,6 +16,11 @@
         return $app['twig']->render('address_book.html.twig', array('existing_contacts' => Contact::getAll()));
     });
 
+    $app->get('/delete_contacts', function() use($app) {
+        Contact::deleteAll();
+        return $app['twig']->render('delete_contacts.html.twig');
+    });
+
     $app->post('/create_contact', function() use($app) {
         $new_contact = new Contact($_POST['input_name'], $_POST['input_number'], $_POST['input_address']);
         $new_contact->save();
